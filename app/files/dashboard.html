@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="[[theme:dark]]">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta http-equiv="refresh" content="30">
+    <title>[[title:Async Health Monitor]]</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/pico.min.css">
+    <link rel="stylesheet" href="/css/pico.colors.min.css">
+    <link rel="stylesheet" href="/css/pico.conditional.[[colors:pumpkin]].min.css">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+        }
+        footer {
+            padding: 1rem 0;
+            border-top: 1px solid var(--pico-muted-border-color);
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--pico-muted-color);
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <hgroup>
+            <h2>[[title:Async Health Monitor]]</h2>
+            <p>[[description:]]</p>
+            <p>[[message:]]</p>
+        </hgroup>
+        <div>
+            [[dashboard:]]
+        </div>
+    </main>
+    <footer class="container">
+        <small><a href="https://www.iamengineer.art">www.iamengineer.art</a> © 2026</small>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>

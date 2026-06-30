@@ -1,0 +1,29 @@
+{
+    "server":{
+        "host": "0.0.0.0",
+        "port": 8080,
+        "run_with_error": true,
+        "server_log": "./data/server.log",
+        "log_file":{
+            "path": "./data/logs.jsonl",
+            "ttl_days": 7
+        }
+    },
+    "ui":{
+        "theme": "dark",
+        "colors": "grey",
+        "title": "System health monitoring",
+        "description": "This is testing description."
+    },
+    "processors":[
+        "processor.Processor",
+        "processors.example.ExampleProcessor"
+    ],
+    "scheduler": {
+        "* * * * *":{
+            "http://0.0.0.0:8080/dashboard.html": "processor.Processor",
+            "http://0.0.0.0:8081/dashboard.html": "processor.Processor"
+        }
+    }
+}
+
